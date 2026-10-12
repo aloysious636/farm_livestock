@@ -1,0 +1,103 @@
+2026-10-08 12:11:51,034 | INFO     | farm.config | logging_configured log_dir=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\logs
+2026-10-08 12:11:51,809 | INFO     | farm.db | database_ready path=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\farm_management.db
+2026-10-08 12:15:11,799 | INFO     | farm.config | logging_configured log_dir=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\logs
+2026-10-08 12:15:11,825 | INFO     | farm.db | database_ready path=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\farm_management.db
+2026-10-08 12:15:11,858 | INFO     | farm.service | animal_created tag=C010 species=Cattle birth_known=True
+2026-10-08 12:15:11,866 | INFO     | farm.service | animal_created tag=C006 species=Cattle birth_known=True
+2026-10-08 12:15:11,887 | INFO     | farm.service | animal_created tag=C001 species=Cattle birth_known=True
+2026-10-08 12:15:11,887 | INFO     | farm.service | animal_created tag=C002 species=Cattle birth_known=True
+2026-10-08 12:15:11,892 | INFO     | farm.service | animal_created tag=C003 species=Cattle birth_known=True
+2026-10-08 12:15:11,900 | INFO     | farm.service | animal_created tag=C004 species=Cattle birth_known=True
+2026-10-08 12:15:11,900 | INFO     | farm.service | animal_created tag=C005 species=Cattle birth_known=True
+2026-10-08 12:15:11,907 | INFO     | farm.service | animal_created tag=C011 species=Cattle birth_known=True
+2026-10-08 12:15:11,909 | INFO     | farm.service | animal_created tag=C009 species=Cattle birth_known=True
+2026-10-08 12:15:11,920 | INFO     | farm.service | animal_created tag=P003 species=Swine birth_known=True
+2026-10-08 12:15:11,926 | INFO     | farm.service | animal_created tag=P001 species=Swine birth_known=True
+2026-10-08 12:15:11,934 | INFO     | farm.service | animal_created tag=P002 species=Swine birth_known=True
+2026-10-08 12:15:11,934 | INFO     | farm.service | animal_created tag=P004 species=Swine birth_known=True
+2026-10-08 12:15:11,934 | INFO     | farm.service | animal_created tag=P005 species=Swine birth_known=True
+2026-10-08 12:15:11,942 | INFO     | farm.service | animal_created tag=P006 species=Swine birth_known=True
+2026-10-08 12:15:11,942 | INFO     | farm.service | animal_created tag=S004 species=Sheep birth_known=True
+2026-10-08 12:15:11,962 | INFO     | farm.service | animal_created tag=S001 species=Sheep birth_known=True
+2026-10-08 12:15:11,966 | INFO     | farm.service | animal_created tag=S002 species=Sheep birth_known=True
+2026-10-08 12:15:11,966 | INFO     | farm.service | animal_created tag=S003 species=Sheep birth_known=True
+2026-10-08 12:15:11,966 | INFO     | farm.service | animal_created tag=S006 species=Sheep birth_known=True
+2026-10-08 12:15:11,976 | INFO     | farm.service | animal_created tag=S007 species=Sheep birth_known=True
+2026-10-08 12:15:11,976 | INFO     | farm.service | animal_created tag=G004 species=Goat birth_known=True
+2026-10-08 12:15:11,993 | INFO     | farm.service | animal_created tag=G001 species=Goat birth_known=True
+2026-10-08 12:15:12,003 | INFO     | farm.service | animal_created tag=G002 species=Goat birth_known=True
+2026-10-08 12:15:12,003 | INFO     | farm.service | animal_created tag=G003 species=Goat birth_known=True
+2026-10-08 12:15:12,018 | INFO     | farm.service | animal_created tag=G006 species=Goat birth_known=True
+2026-10-08 12:15:12,018 | INFO     | farm.service | animal_created tag=R003 species=Rabbit birth_known=True
+2026-10-08 12:15:12,018 | INFO     | farm.service | animal_created tag=R001 species=Rabbit birth_known=True
+2026-10-08 12:15:12,034 | INFO     | farm.service | animal_created tag=R002 species=Rabbit birth_known=True
+2026-10-08 12:15:12,034 | INFO     | farm.service | animal_created tag=R004 species=Rabbit birth_known=True
+2026-10-08 12:15:12,050 | INFO     | farm.service | animal_created tag=G007 species=Goat birth_known=False
+2026-10-08 12:15:12,067 | INFO     | farm.service | animal_created tag=C007 species=Cattle birth_known=True
+2026-10-08 12:15:12,067 | INFO     | farm.service | animal_created tag=C008 species=Cattle birth_known=True
+2026-10-08 12:15:12,084 | INFO     | farm.service | animal_created tag=PG001 species=Swine birth_known=True
+2026-10-08 12:15:12,084 | INFO     | farm.service | animal_created tag=PG002 species=Swine birth_known=True
+2026-10-08 12:15:12,084 | INFO     | farm.service | animal_created tag=PG003 species=Swine birth_known=True
+2026-10-08 12:15:12,100 | INFO     | farm.service | animal_created tag=PG004 species=Swine birth_known=True
+2026-10-08 12:15:12,100 | INFO     | farm.service | animal_created tag=PG005 species=Swine birth_known=True
+2026-10-08 12:15:12,100 | INFO     | farm.service | animal_created tag=PG006 species=Swine birth_known=True
+2026-10-08 12:15:12,117 | INFO     | farm.service | animal_created tag=PG101 species=Swine birth_known=True
+2026-10-08 12:15:12,118 | INFO     | farm.service | animal_created tag=PG102 species=Swine birth_known=True
+2026-10-08 12:15:12,118 | INFO     | farm.service | animal_created tag=PG103 species=Swine birth_known=True
+2026-10-08 12:15:12,133 | INFO     | farm.service | animal_created tag=PG104 species=Swine birth_known=True
+2026-10-08 12:15:12,133 | INFO     | farm.service | animal_created tag=S101 species=Sheep birth_known=True
+2026-10-08 12:15:12,149 | INFO     | farm.service | animal_created tag=S102 species=Sheep birth_known=True
+2026-10-08 12:15:12,149 | INFO     | farm.service | animal_created tag=K101 species=Goat birth_known=True
+2026-10-08 12:15:12,166 | INFO     | farm.service | animal_created tag=K102 species=Goat birth_known=True
+2026-10-08 12:15:12,436 | INFO     | farm.service | tasks_synced created=184
+2026-10-08 12:15:12,436 | INFO     | farm.seed | seed_complete {'animals': 47, 'tasks_generated': 184, 'breedings': 19}
+2026-10-08 12:16:42,773 | INFO     | farm.config | logging_configured log_dir=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\logs
+2026-10-08 12:16:42,963 | INFO     | farm.db | database_ready path=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\farm_management.db
+2026-10-11 22:56:13,800 | INFO     | farm.config | logging_configured log_dir=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\logs
+2026-10-11 22:56:13,988 | INFO     | farm.db | database_ready path=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\farm_management.db
+2026-10-11 22:56:15,265 | INFO     | farm.service | tasks_synced created=2
+2026-10-11 22:59:11,881 | ERROR    | farm.db | session_rollback
+Traceback (most recent call last):
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\database.py", line 49, in session_scope
+    yield session
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\app.py", line 491, in main
+    PAGES[page](session, today)
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\app.py", line 435, in page_export
+    st.download_button("⬇️ Download everything (Excel workbook)", svc.to_excel_bytes(frames),
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\services\farm_service.py", line 736, in to_excel_bytes
+    with pd.ExcelWriter(buf, engine="openpyxl") as writer:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\venv\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 58, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+2026-10-11 23:02:19,834 | ERROR    | farm.db | session_rollback
+Traceback (most recent call last):
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\database.py", line 49, in session_scope
+    yield session
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\app.py", line 491, in main
+    PAGES[page](session, today)
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\app.py", line 435, in page_export
+    st.download_button("⬇️ Download everything (Excel workbook)", svc.to_excel_bytes(frames),
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\services\farm_service.py", line 736, in to_excel_bytes
+    with pd.ExcelWriter(buf, engine="openpyxl") as writer:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\venv\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 58, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+2026-10-11 23:11:08,907 | ERROR    | farm.db | session_rollback
+Traceback (most recent call last):
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\database.py", line 49, in session_scope
+    yield session
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\app.py", line 491, in main
+    PAGES[page](session, today)
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\app.py", line 435, in page_export
+    st.download_button("⬇️ Download everything (Excel workbook)", svc.to_excel_bytes(frames),
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\services\farm_service.py", line 736, in to_excel_bytes
+    with pd.ExcelWriter(buf, engine="openpyxl") as writer:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\venv\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 58, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
