@@ -479,7 +479,7 @@ def main() -> None:
         flash("Demo data already present." if res.get("skipped") else f"Loaded demo data: {res}", "info" if res.get("skipped") else "success")
         st.rerun()
     if st.sidebar.button(" Reset DB & reload demo"):
-        reset_db()
+git status        reset_db()
         with session_scope() as s:
             seed_demo_data(s, today=date.today(), reset=True)
         flash("Database reset and demo data reloaded.")
