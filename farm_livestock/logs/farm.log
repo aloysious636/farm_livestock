@@ -101,3 +101,99 @@ Traceback (most recent call last):
   File "C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\venv\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 58, in __init__
     from openpyxl.workbook import Workbook
 ModuleNotFoundError: No module named 'openpyxl'
+2026-10-12 10:21:46,416 | INFO     | farm.config | logging_configured log_dir=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\logs
+2026-10-12 10:21:46,565 | INFO     | farm.db | database_ready path=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\farm_management.db
+2026-10-12 10:21:47,590 | INFO     | farm.service | tasks_synced created=1
+2026-10-12 10:48:54,911 | INFO     | farm.config | logging_configured log_dir=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\logs
+2026-10-12 10:48:55,074 | INFO     | farm.db | database_ready path=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\farm_management.db
+2026-10-12 10:49:27,481 | WARNING  | farm.db | database_reset path=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\farm_management.db
+2026-10-12 10:49:27,497 | INFO     | farm.service | animal_created tag=C010 species=Cattle birth_known=True
+2026-10-12 10:49:27,502 | INFO     | farm.service | animal_created tag=C006 species=Cattle birth_known=True
+2026-10-12 10:49:27,506 | INFO     | farm.service | animal_created tag=C001 species=Cattle birth_known=True
+2026-10-12 10:49:27,508 | INFO     | farm.service | animal_created tag=C002 species=Cattle birth_known=True
+2026-10-12 10:49:27,510 | INFO     | farm.service | animal_created tag=C003 species=Cattle birth_known=True
+2026-10-12 10:49:27,516 | INFO     | farm.service | animal_created tag=C004 species=Cattle birth_known=True
+2026-10-12 10:49:27,519 | INFO     | farm.service | animal_created tag=C005 species=Cattle birth_known=True
+2026-10-12 10:49:27,521 | INFO     | farm.service | animal_created tag=C011 species=Cattle birth_known=True
+2026-10-12 10:49:27,525 | INFO     | farm.service | animal_created tag=C009 species=Cattle birth_known=True
+2026-10-12 10:49:27,527 | INFO     | farm.service | animal_created tag=P003 species=Swine birth_known=True
+2026-10-12 10:49:27,538 | INFO     | farm.service | animal_created tag=P001 species=Swine birth_known=True
+2026-10-12 10:49:27,552 | INFO     | farm.service | animal_created tag=P002 species=Swine birth_known=True
+2026-10-12 10:49:27,554 | INFO     | farm.service | animal_created tag=P004 species=Swine birth_known=True
+2026-10-12 10:49:27,558 | INFO     | farm.service | animal_created tag=P005 species=Swine birth_known=True
+2026-10-12 10:49:27,573 | INFO     | farm.service | animal_created tag=P006 species=Swine birth_known=True
+2026-10-12 10:49:27,586 | INFO     | farm.service | animal_created tag=S004 species=Sheep birth_known=True
+2026-10-12 10:49:27,593 | INFO     | farm.service | animal_created tag=S001 species=Sheep birth_known=True
+2026-10-12 10:49:27,598 | INFO     | farm.service | animal_created tag=S002 species=Sheep birth_known=True
+2026-10-12 10:49:27,604 | INFO     | farm.service | animal_created tag=S003 species=Sheep birth_known=True
+2026-10-12 10:49:27,604 | INFO     | farm.service | animal_created tag=S006 species=Sheep birth_known=True
+2026-10-12 10:49:27,604 | INFO     | farm.service | animal_created tag=S007 species=Sheep birth_known=True
+2026-10-12 10:49:27,615 | INFO     | farm.service | animal_created tag=G004 species=Goat birth_known=True
+2026-10-12 10:49:27,615 | INFO     | farm.service | animal_created tag=G001 species=Goat birth_known=True
+2026-10-12 10:49:27,623 | INFO     | farm.service | animal_created tag=G002 species=Goat birth_known=True
+2026-10-12 10:49:27,628 | INFO     | farm.service | animal_created tag=G003 species=Goat birth_known=True
+2026-10-12 10:49:27,635 | INFO     | farm.service | animal_created tag=G006 species=Goat birth_known=True
+2026-10-12 10:49:27,638 | INFO     | farm.service | animal_created tag=R003 species=Rabbit birth_known=True
+2026-10-12 10:49:27,640 | INFO     | farm.service | animal_created tag=R001 species=Rabbit birth_known=True
+2026-10-12 10:49:27,642 | INFO     | farm.service | animal_created tag=R002 species=Rabbit birth_known=True
+2026-10-12 10:49:27,644 | INFO     | farm.service | animal_created tag=R004 species=Rabbit birth_known=True
+2026-10-12 10:49:27,647 | INFO     | farm.service | animal_created tag=G007 species=Goat birth_known=False
+2026-10-12 10:49:27,659 | INFO     | farm.service | animal_created tag=C007 species=Cattle birth_known=True
+2026-10-12 10:49:27,678 | INFO     | farm.service | animal_created tag=C008 species=Cattle birth_known=True
+2026-10-12 10:49:27,696 | INFO     | farm.service | animal_created tag=PG001 species=Swine birth_known=True
+2026-10-12 10:49:27,719 | INFO     | farm.service | animal_created tag=PG002 species=Swine birth_known=True
+2026-10-12 10:49:27,725 | INFO     | farm.service | animal_created tag=PG003 species=Swine birth_known=True
+2026-10-12 10:49:27,738 | INFO     | farm.service | animal_created tag=PG004 species=Swine birth_known=True
+2026-10-12 10:49:27,742 | INFO     | farm.service | animal_created tag=PG005 species=Swine birth_known=True
+2026-10-12 10:49:27,749 | INFO     | farm.service | animal_created tag=PG006 species=Swine birth_known=True
+2026-10-12 10:49:27,757 | INFO     | farm.service | animal_created tag=PG101 species=Swine birth_known=True
+2026-10-12 10:49:27,760 | INFO     | farm.service | animal_created tag=PG102 species=Swine birth_known=True
+2026-10-12 10:49:27,767 | INFO     | farm.service | animal_created tag=PG103 species=Swine birth_known=True
+2026-10-12 10:49:27,824 | INFO     | farm.service | animal_created tag=PG104 species=Swine birth_known=True
+2026-10-12 10:49:27,856 | INFO     | farm.service | animal_created tag=S101 species=Sheep birth_known=True
+2026-10-12 10:49:27,858 | INFO     | farm.service | animal_created tag=S102 species=Sheep birth_known=True
+2026-10-12 10:49:27,874 | INFO     | farm.service | animal_created tag=K101 species=Goat birth_known=True
+2026-10-12 10:49:27,874 | INFO     | farm.service | animal_created tag=K102 species=Goat birth_known=True
+2026-10-12 10:49:28,912 | INFO     | farm.service | tasks_synced created=184
+2026-10-12 10:49:28,921 | INFO     | farm.seed | seed_complete {'animals': 47, 'tasks_generated': 184, 'breedings': 19}
+2026-10-27 11:24:47,242 | INFO     | farm.config | logging_configured log_dir=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\logs
+2026-10-27 11:24:47,572 | INFO     | farm.db | database_ready path=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\farm_management.db
+2026-10-27 11:24:48,959 | INFO     | farm.service | tasks_synced created=12
+2026-10-27 11:26:31,199 | ERROR    | asyncio | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\Aloysius\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Aloysius\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-10-27 11:29:55,914 | INFO     | farm.config | logging_configured log_dir=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\logs
+2026-10-27 11:29:55,914 | INFO     | farm.config | logging_configured log_dir=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\logs
+2026-10-27 11:39:05,568 | ERROR    | asyncio | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\Aloysius\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Aloysius\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-10-27 11:39:05,568 | ERROR    | asyncio | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\Aloysius\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Aloysius\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-10-27 11:58:07,677 | INFO     | farm.config | logging_configured log_dir=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\logs
+2026-10-27 11:58:07,923 | INFO     | farm.db | database_ready path=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\farm_management.db
+2026-10-28 10:59:43,766 | INFO     | farm.config | logging_configured log_dir=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\logs
+2026-10-28 10:59:44,063 | INFO     | farm.db | database_ready path=C:\Users\Aloysius\Downloads\farm_livestock\farm_livestock\farm_management.db
+2026-10-28 15:09:59,444 | ERROR    | asyncio | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\Aloysius\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Aloysius\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host

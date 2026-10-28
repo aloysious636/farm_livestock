@@ -24,7 +24,7 @@ from services import farm_service as svc
 
 setup_logging()
 logger = logging.getLogger("farm.app")
-st.set_page_config(page_title="Farm Livestock Management System", page_icon="🐄", layout="wide")
+st.set_page_config(page_title="Farm Livestock Management System", page_icon="", layout="wide")
 
 
 @st.cache_resource
@@ -82,7 +82,7 @@ def df_or_info(df: pd.DataFrame, empty_msg: str, **kwargs) -> None:
 # Pages
 # --------------------------------------------------------------------------------------
 def page_dashboard(session: Session, today: date) -> None:
-    st.title("🐄 Dashboard & Daily Alert Centre")
+    st.title(" Farmsmart Dashboard & Daily Alert Centre")
     st.caption(f"Working date: **{today:%A, %d %B %Y}**  |  🔴 ≤3 days / overdue   🟠 ≤7 days   🟢 later")
     data = svc.build_dashboard(session, today)
     a, s = data["alerts"], data["summary"]
@@ -97,7 +97,7 @@ def page_dashboard(session: Session, today: date) -> None:
     if s["by_species"]:
         st.caption("Herd: " + "  •  ".join(f"{k}: {v}" for k, v in s["by_species"].items()))
 
-    def block(title: str, rows: list, empty: str = "✅ Nothing due.") -> None:
+    def block(title: str, rows: list, empty: str = " Nothing due.") -> None:
         st.subheader(f"{title} ({len(rows)})")
         if rows:
             st.dataframe(pd.DataFrame(rows), hide_index=True)
@@ -106,16 +106,16 @@ def page_dashboard(session: Session, today: date) -> None:
 
     left, right = st.columns(2)
     with left:
-        block("🍼 Births due in the next 7 days", a["overdue_births"] + a["births_7"])
-        block("📅 Births due in 8-14 days", a["births_14"])
-        block("🌡️ Heat / receptivity watch (this week)", a["heat"])
-        block("🩺 Pregnancy diagnosis due", a["pd"])
+        block(" Births due in the next 7 days", a["overdue_births"] + a["births_7"])
+        block(" Births due in 8-14 days", a["births_14"])
+        block(" Heat / receptivity watch (this week)", a["heat"])
+        block(" Pregnancy diagnosis due", a["pd"])
     with right:
-        block("🥣 Steaming-up (late gestation) feed", a["steaming"])
-        block("🌾 Flushing (pre-breeding) feed", a["flushing"])
-        block("🥛 Dry-off due (dairy cattle)", a["drying"])
+        block(" Steaming-up (late gestation) feed", a["steaming"])
+        block(" Flushing (pre-breeding) feed", a["flushing"])
+        block(" Dry-off due (dairy cattle)", a["drying"])
     st.divider()
-    t1, t2, t3 = st.tabs([f"⛔ Overdue ({len(a['tasks_overdue'])})", f"📌 Due today ({len(a['tasks_today'])})", f"🗓️ Next 7 days ({len(a['tasks_week'])})"])
+    t1, t2, t3 = st.tabs([f" Overdue ({len(a['tasks_overdue'])})", f" Due today ({len(a['tasks_today'])})", f" Next 7 days ({len(a['tasks_week'])})"])
     with t1:
         df_or_info(pd.DataFrame(a["tasks_overdue"]), "No overdue tasks.")
     with t2:
@@ -125,7 +125,7 @@ def page_dashboard(session: Session, today: date) -> None:
 
 
 def page_animals(session: Session, today: date) -> None:
-    st.title("🏷️ Animal Profiles & Identification")
+    st.title("Animal Profiles & Identification")
     tab_reg, tab_add, tab_edit = st.tabs(["Herd register", "Register animal", "Edit / change status"])
 
     with tab_reg:
@@ -238,7 +238,7 @@ def page_breeding(session: Session, today: date) -> None:
                                                   f"({tl.days_remaining} days). Heat check {tl.heat_check_start:%d %b}-{tl.heat_check_end:%d %b}; "
                                                   f"PD {tl.pd_date:%d %b}; steaming-up from {tl.steaming_start:%d %b}.")
                     except svc.InbreedingRiskError as e:
-                        st.error("⚠️ Inbreeding risk detected:")
+                        st.error("Inbreeding risk detected:")
                         for w in e.warnings:
                             st.warning(w)
                         st.info("Tick the confirmation box and submit again to override, or choose a different sire.")
@@ -311,7 +311,7 @@ def page_breeding(session: Session, today: date) -> None:
 
 
 def page_tasks(session: Session, today: date) -> None:
-    st.title("💉 Husbandry & Preventive Health Schedule")
+    st.title(" Husbandry & Preventive Health Schedule")
     c = st.columns(3)
     status = c[0].selectbox("Status", ["Pending + Overdue", "Overdue", "Pending", "Done", "All"], key="t_status")
     species = c[1].selectbox("Species", ["All", *SPECIES], key="t_species")
@@ -351,7 +351,7 @@ def page_tasks(session: Session, today: date) -> None:
 
 
 def page_production(session: Session, today: date) -> None:
-    st.title("🥛 Production Logs")
+    st.title(" Production Logs")
     t_log, t_milk, t_adg, t_raw = st.tabs(["Add record", "Milk yield", "Growth / ADG", "All records"])
     animals = svc.list_animals(session, status="Active")
     with t_log:
@@ -386,7 +386,7 @@ def page_production(session: Session, today: date) -> None:
 
 
 def page_finance(session: Session, today: date) -> None:
-    st.title(f"💰 Feed & Cost Tracker ({CURRENCY})")
+    st.title(f" Feed & Cost Tracker ({CURRENCY})")
     t_add, t_head, t_all = st.tabs(["Log cost", "Cost per head", "All costs"])
     with t_add:
         animals = svc.list_animals(session, status="Active")
@@ -430,9 +430,9 @@ def page_finance(session: Session, today: date) -> None:
 
 
 def page_export(session: Session, today: date) -> None:
-    st.title("📤 Data Export")
+    st.title("Data Export")
     frames = svc.export_frames(session, today)
-    st.download_button("⬇️ Download everything (Excel workbook)", svc.to_excel_bytes(frames),
+    st.download_button("Download everything (Excel workbook)", svc.to_excel_bytes(frames),
                        file_name=f"farm_export_{today:%Y%m%d}.xlsx",
                        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", type="primary")
     st.divider()
@@ -461,14 +461,14 @@ def page_knowledge(session: Session, today: date) -> None:
 
 
 PAGES = {
-    "📊 Dashboard": page_dashboard, "🏷️ Animals": page_animals, "🧬 Breeding": page_breeding,
-    "💉 Husbandry tasks": page_tasks, "🥛 Production": page_production, "💰 Finance": page_finance,
-    "📤 Export": page_export, "📚 Knowledge base": page_knowledge,
+    " Dashboard": page_dashboard, "Animals": page_animals, "Breeding": page_breeding,
+    " Husbandry tasks": page_tasks, " Production": page_production, " Finance": page_finance,
+    "Export": page_export, " Knowledge base": page_knowledge,
 }
 
 
 def main() -> None:
-    st.sidebar.title("🐄 Farm Manager")
+    st.sidebar.title("Farm Manager")
     page = st.sidebar.radio("Navigate", list(PAGES), label_visibility="collapsed")
     today = st.sidebar.date_input("Working date (change to simulate time passing)", value=date.today(), key="today")
     st.sidebar.divider()
@@ -478,7 +478,7 @@ def main() -> None:
             res = seed_demo_data(s, today=date.today())
         flash("Demo data already present." if res.get("skipped") else f"Loaded demo data: {res}", "info" if res.get("skipped") else "success")
         st.rerun()
-    if st.sidebar.button("⚠️ Reset DB & reload demo"):
+    if st.sidebar.button(" Reset DB & reload demo"):
         reset_db()
         with session_scope() as s:
             seed_demo_data(s, today=date.today(), reset=True)
